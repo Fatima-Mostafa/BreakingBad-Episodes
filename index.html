@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body id="body">
+        <div class="container conMode">
+            <div id="mode" class="mode">
+                <h3>Mode:-</h3>
+            </div>
+            <div id="modebtn" class="modebtn">
+                <button id="modebtn1" onclick="changetolight()" class="btn">LightMode</button>
+            </div>
+        </div>
+        <h2 id="header" class="header">BreakingBad☠</h2>
+        <div class="dropdown">
+            <button  id="menu" class="btn bt btn-secondary dropdown-toggle "  data-bs-toggle="dropdown" aria-expanded="false">
+                Seasons Are:-
+            </button>
+            <ul id="drop" class="dropdown-menu">
+              <li><button id="dropdown-item1" onclick="displaySeason(number=1)" class="dropdown-item" >Season1</button></li>
+              <li><button id="dropdown-item2" onclick="displaySeason(number=2)" class="dropdown-item" >Season2</button></li>
+              <li><button id="dropdown-item3" onclick="displaySeason(number=3)" class="dropdown-item" >Season3</button></li>
+              <li><button id="dropdown-item4" onclick="displaySeason(number=4)" class="dropdown-item" >Season4</button></li>
+              <li><button id="dropdown-item5" onclick="displaySeason(number=5)" class="dropdown-item" >Season5</button></li>
+            </ul>
+          </div>
+
+    <div class="container">
+       <input onkeyup="search(this.value)" class="form-control con w-25 m-auto mt-3" id="search" type="text" placeholder="Search...">
+       <button id="seasonbtn" onclick="display()" class="btn bt1">
+        Display All Season with All Episodes
+       </button>
+    </div>
+    <div class="container">
+        <div id="certien" class="row">
+        </div>
+    </div>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
